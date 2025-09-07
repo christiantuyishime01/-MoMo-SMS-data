@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.vscode/
+.idea/
+# Data artifacts
+data/db.sqlite3
+data/logs/
+# OS/editor junk
+.DS_Store
+
