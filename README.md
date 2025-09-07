@@ -17,5 +17,5 @@ Enterprise-level full-stack application for processing Mobile Money (MoMo) SMS d
 - XML data parsing and processing
 
 ## Scrum Board
-[Link to Scrum board will be added here]
+[https://github.com/users/christiantuyishime01/projects/3/views/1]
 
