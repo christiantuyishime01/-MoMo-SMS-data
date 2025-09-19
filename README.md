@@ -1,8 +1,8 @@
+**MoMo SMS Data Processing System - Database Implementation**
+# Project Overview
+An enterprise-level system designed to process and manage Mobile Money (MoMo) transaction data received via SMS in XML format. This database foundation enables efficient storage, querying, and analysis of transaction data while maintaining data integrity and supporting future scalability.
 
-MoMo SMS Data Processor
-An enterprise-level full-stack application designed to process and manage Mobile Money (MoMo) transaction data received via SMS in XML format. This system parses, stores, and structures transactional data for reporting, analytics, and user management.
-
-Team Members
+# Team Members
 Kevin Nizeyimana
 
 Arnaud Manzi Ineza
@@ -13,61 +13,135 @@ Katsia Teta
 
 Karigirwa Ange
 
-Project Overview
-Many mobile money transactions in Rwanda are confirmed via SMS. These messages contain structured XML data that must be parsed, validated, and stored for further processing. This system serves as a backbone for capturing, categorizing, and logging these transactions in a reliable and scalable database.
+# Week 2 Objectives
+This week, we focused on designing and implementing a robust database schema that translates business requirements into a functional MySQL database, while practicing data serialization concepts with JSON.
+https://github.com/users/christiantuyishime01/projects/3/views/1
 
- System Architecture
-For a detailed overview of the system design, refer to the Architecture Diagram.
-
- Key Features
-XML-based SMS parsing and validation
-
-Transaction categorization and user management
-
-Robust logging and error handling
-
-RESTful JSON API for front-end integration
-
-Scalable relational database design
-
-  
- 
-Database Design & Implementation 
-Completed Tasks:
-ERD Design: Designed a detailed Entity-Relationship Diagram identifying core entities like Users, Transactions, Categories, and Logs.
-
-SQL Scripts: Full MySQL implementation with constraints, indexes, and sample data.
-
-JSON Serialization: Sample JSON structures demonstrating API response format.
-
-Team Collaboration: All deliverables committed and organized via GitHub.
-
-Design Philosophy:
-We structured the database like a well-organized office:
-
-Users is our address book 
-
-Transactions is the main ledger 
-
-Transaction_Categories is the rulebook 
-
-Raw_Messages is the inbox 
-
-System_Logs is the security log 
-
-Using foreign keys (like user_id or category_id), we link these tables efficiently—avoiding duplication and ensuring data integrity.
-
-How to Set Up the Database
-
-Clone the repository
-
-Navigate to the database/ folder
-
-Run the SQL script in your MySQL environment:
+https://drive.google.com/file/d/1Xa7DOjepNgDx9xvPfTrK3o_vju3nNNQe/view 
 
 
-mysql -u your_username -p < database_setup.sql
+# Database Architecture
+Entity Relationship Diagram (ERD) 
 
-Verify sample data is inserted correctly
+Our ERD includes the following core entities with proper relationships:
 
-Use the sample queries (included) to test CRUD operations
+Transactions - Main transaction records
+
+Users/Customers - Sender/receiver information
+
+Transaction_Categories - Payment and transfer types
+
+System_Logs - Data processing tracking
+
+Raw_Messages - Original SMS data storage
+
+Key Features:
+
+Clear primary and foreign key relationships
+
+Proper cardinality notation (1:1, 1:M, M:N)
+
+Junction table for many-to-many relationships
+
+Comprehensive attribute lists with appropriate data types
+
+
+# Database Implementation
+SQL Features Implemented:
+DDL Statements with proper constraints
+
+FOREIGN KEY constraints for referential integrity
+
+CHECK constraints for data validation
+
+Indexes for performance optimization
+
+Meaningful column comments for documentation
+
+Sample data (5+ records per main table)
+
+Sample CRUD Operations:
+The database has been tested with basic Create, Read, Update, and Delete operations to ensure functionality and reliability.
+
+# JSON Data Modeling
+We've designed comprehensive JSON schemas that demonstrate:
+
+Proper nesting of related data
+
+Appropriate data types and structures
+
+Serialization of relational data for API responses
+
+Complex transaction objects with complete related data
+
+# Team Collaboration
+GitHub Practices:
+Regular commits with clear commit messages
+
+Visible team member contributions
+
+Organized folder structure
+
+Updated Scrum board with task completion
+
+Scrum Board Updates:
+Week 1 tasks marked as completed
+
+Week 2 tasks defined and assigned
+
+Clear sprint planning for upcoming work
+
+# Technical Specifications
+Database Requirements Met:
+- Appropriate MySQL data types (VARCHAR, INT, DECIMAL, DATETIME)
+
+- Referential integrity with FOREIGN KEY constraints
+
+- CHECK constraints implementation
+
+- Comprehensive documentation
+
+- Performance optimization with indexes
+
+Security Enhancements:
+Unique validation rules implemented
+
+Data accuracy measures included
+
+Audit trails through system logs
+
+# Deliverables Completed
+ERD Diagram (docs/erd_diagram.[png/pdf])
+
+SQL Setup Script (database/database_setup.sql)
+
+JSON Examples (examples/json_schemas.json)
+
+Updated README with database documentation
+
+Database Design Document (PDF format)
+
+Updated Scrum Board with progress tracking
+
+# Quality Assurance
+Testing Performed:
+Schema validation testing
+
+Constraint enforcement verification
+
+Relationship integrity checks
+
+Sample query execution
+
+CRUD operation validation
+
+# Documentation Includes:
+ERD with full documentation
+
+Design rationale and justification
+
+Data dictionary with table/column descriptions
+
+Sample queries with screenshots
+
+Security enhancement documentation
