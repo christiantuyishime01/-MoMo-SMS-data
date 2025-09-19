@@ -1,54 +1,73 @@
-# MoMo SMS Data Processor
 
-## Team Members
-- Kevin Nizeyimana
-- Arnaud Manzi Ineza
-- Tuyishime Christian
-- Katsia Teta
-- Karigirwa Ange
+MoMo SMS Data Processor
+An enterprise-level full-stack application designed to process and manage Mobile Money (MoMo) transaction data received via SMS in XML format. This system parses, stores, and structures transactional data for reporting, analytics, and user management.
 
-## Project Description
-Enterprise-level full-stack application for processing Mobile Money (MoMo) SMS data in XML format. The system does not function fully due to the empty files that does not contain data.
+Team Members
+Kevin Nizeyimana
 
-## System Architecture
-[https://drive.google.com/file/d/1Xa7DOjepNgDx9xvPfTrK3o_vju3nNNQe/view?usp=sharing]
+Arnaud Manzi Ineza
 
-## Features
-- XML data parsing and processing
+Tuyishime Christian
 
-## Scrum Board
-[https://github.com/users/christiantuyishime01/projects/3/views/1]
+Katsia Teta
+
+Karigirwa Ange
+
+Project Overview
+Many mobile money transactions in Rwanda are confirmed via SMS. These messages contain structured XML data that must be parsed, validated, and stored for further processing. This system serves as a backbone for capturing, categorizing, and logging these transactions in a reliable and scalable database.
+
+ System Architecture
+For a detailed overview of the system design, refer to the Architecture Diagram.
+
+ Key Features
+XML-based SMS parsing and validation
+
+Transaction categorization and user management
+
+Robust logging and error handling
+
+RESTful JSON API for front-end integration
+
+Scalable relational database design
+
+  
+ 
+Database Design & Implementation 
+Completed Tasks:
+ERD Design: Designed a detailed Entity-Relationship Diagram identifying core entities like Users, Transactions, Categories, and Logs.
+
+SQL Scripts: Full MySQL implementation with constraints, indexes, and sample data.
+
+JSON Serialization: Sample JSON structures demonstrating API response format.
+
+Team Collaboration: All deliverables committed and organized via GitHub.
+
+Design Philosophy:
+We structured the database like a well-organized office:
+
+Users is our address book 
+
+Transactions is the main ledger 
+
+Transaction_Categories is the rulebook 
+
+Raw_Messages is the inbox 
+
+System_Logs is the security log 
+
+Using foreign keys (like user_id or category_id), we link these tables efficiently—avoiding duplication and ensuring data integrity.
+
+How to Set Up the Database
+
+Clone the repository
+
+Navigate to the database/ folder
+
+Run the SQL script in your MySQL environment:
 
 
-## Week 2: Database Design and Implementation
+mysql -u your_username -p < database_setup.sql
 
-- ERD diagram: see `docs/erd_diagram.md` and commit your PNG/PDF in `docs/`.
-- SQL setup script: `database/database_setup.sql` (author schema per ERD; include sample data and indexes).
-- JSON examples: `examples/json_schemas.json` (team-authored serialization examples).
-- AI Usage Log: `AI_USAGE.md`.
+Verify sample data is inserted correctly
 
-### Design Explanation: Making Sense of the Money Moves
-
-Imagine our database is like a well-organized office that tracks every mobile money transaction. We've created different filing cabinets (tables) for different types of information so that everything has its place and is easy to find.
-
-First, we have the **Users cabinet**. This is our address book. It holds the essential info for every customer—their unique phone number, name, and account status. The user_id is like giving each person their own employee ID number; it's a simple, unique way to identify them across our entire system.
-
-Next is the main **Transactions cabinet**, the heart of our operation. Every time money is sent or received, we file a record here. But instead of writing out the sender's and receiver's full details every single time, we simply write down their user_id (like referencing their employee ID). This creates a smart, efficient link back to the Users cabinet. We do the same thing for the category_id and message_id, which point to their own specialized cabinets. This prevents duplicate information and keeps everything consistent. The reference_number acts as a unique tracking number for each transaction, much like a receipt number.
-
-The **Transaction_Categories cabinet** is our rulebook. It helps us understand the type of each transaction, like "cash deposit," "bill payment," or "money transfer." Each category can have its own rule pattern, which is like a set of instructions for our system on how to handle that specific kind of transaction.
-
-The **Raw_Messages cabinet** is our "Inbox." It stores the original, unedited text messages (SMS) that come in from the telecom network before our system translates them. Once a message is processed, we update its status and timestamp it.
-
-Finally, the **System_Logs cabinet** is our security guard and secretary. It keeps a detailed diary of everything that happens in our system—successes, errors, and warnings. This is crucial for troubleshooting problems and maintaining a clear audit trail.
-
-### Week 2 Deliverables Status:
-- ✅ **ERD Design**: Complete with visual diagram and documentation
-- ✅ **SQL Implementation**: Complete MySQL database with constraints and sample data
-- ✅ **JSON Modeling**: Complete serialization examples and mapping documentation
-- ✅ **Team Collaboration**: Repository updated with all deliverables
-
-### Next Steps:
-- [ ] Save ERD diagram as PNG/PDF in `docs/` folder
-- [ ] Create Database Design Document (PDF) with screenshots
-- [ ] Update Scrum board with completed tasks
-- [ ] Run sample queries and capture screenshots for documentation
+Use the sample queries (included) to test CRUD operations
