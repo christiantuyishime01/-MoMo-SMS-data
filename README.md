@@ -21,7 +21,10 @@ https://drive.google.com/file/d/1Xa7DOjepNgDx9xvPfTrK3o_vju3nNNQe/view
 
 
 # Database Architecture
-Entity Relationship Diagram (ERD) 
+Entity Relationship Diagram (ERD)
+
+ <img width="1158" height="522" alt="Untitled" src="https://github.com/user-attachments/assets/0c460e59-3e43-4442-8b7c-bd08bdd6a275" />
+
 
 Our ERD includes the following core entities with proper relationships:
 
