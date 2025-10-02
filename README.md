@@ -158,6 +158,7 @@ The API uses Basic Authentication with these credentials:
 | GET    | `/performance`      | DSA performance comparison    |
 
 ## Testing & Screenshots
+<img width="1059" height="549" alt="Screenshot from 2025-10-02 17-59-07" src="https://github.com/user-attachments/assets/0adf0087-75ba-4922-8d0c-62f7d0e04039" />
 
 ### **For Assignment Screenshots**
 **See [TESTING_COMMANDS.md](TESTING_COMMANDS.md) for complete testing instructions and all required screenshot commands!**
