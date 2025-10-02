@@ -2,11 +2,11 @@
 
 An enterprise-level system designed to process and manage Mobile Money (MoMo) transaction data received via SMS in XML format. This comprehensive solution includes database implementation, REST API with authentication, and performance analysis using Data Structures & Algorithms (DSA).
 
-## 🚀 Project Overview
+##  Project Overview
 
 This system enables efficient storage, querying, and analysis of transaction data while maintaining data integrity and supporting future scalability. The project spans multiple weeks of development, from database design to API implementation.
 
-## ✨ Features
+##  Features
 
 ### Database Foundation (Week 2)
 - **MySQL Database**: Robust schema with proper relationships and constraints
@@ -29,7 +29,7 @@ This system enables efficient storage, querying, and analysis of transaction dat
 - Katsia Teta
 - Karigirwa Ange
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 MoMo-SMS-data/
@@ -251,18 +251,18 @@ The system processes various types of MoMo SMS messages:
 - **Bank Deposits**: "*113*R*A bank deposit of X RWF..."
 - **Airtime Purchases**: "*162*TxId:X*S*Your payment of Y RWF to Airtime..."
 
-## 🎯 Project Milestones
+##  Project Milestones
 
-### Week 2: Database Foundation ✅
+### Week 2: Database Foundation 
 **Objective**: Design and implement robust database schema
 
 **Completed Deliverables:**
-- ✅ **Entity Relationship Diagram (ERD)** - Complete database design
-- ✅ **MySQL Database Schema** - Full DDL with constraints and relationships
-- ✅ **JSON Data Modeling** - Structured serialization for API responses
-- ✅ **Sample Data Population** - 5+ records per main table
-- ✅ **Database Documentation** - Complete design rationale and data dictionary
-- ✅ **CRUD Operations Testing** - Validated database functionality
+-  **Entity Relationship Diagram (ERD)** - Complete database design
+-  **MySQL Database Schema** - Full DDL with constraints and relationships
+-  **JSON Data Modeling** - Structured serialization for API responses
+-  **Sample Data Population** - 5+ records per main table
+-  **Database Documentation** - Complete design rationale and data dictionary
+-  **CRUD Operations Testing** - Validated database functionality
 
 **Database Architecture Features:**
 - Primary and foreign key relationships
@@ -277,57 +277,57 @@ The system processes various types of MoMo SMS messages:
 **Completed Deliverables:**
 
 1. **Data Parsing & ETL**
-   - ✅ Real SMS XML parsing (1,693 transactions)
-   - ✅ Transaction extraction using regex patterns
-   - ✅ JSON conversion with proper data types
-   - ✅ Data cleaning and normalization
+   -  Real SMS XML parsing (1,693 transactions)
+   -  Transaction extraction using regex patterns
+   -  JSON conversion with proper data types
+   -  Data cleaning and normalization
 
 2. **REST API Implementation**  
-   - ✅ All CRUD endpoints (GET, POST, PUT, DELETE)
-   - ✅ Proper HTTP status codes and error handling
-   - ✅ JSON request/response format
-   - ✅ Performance monitoring endpoint
+   -  All CRUD endpoints (GET, POST, PUT, DELETE)
+   -  Proper HTTP status codes and error handling
+   -  JSON request/response format
+   -  Performance monitoring endpoint
 
 3. **Authentication & Security**
-   - ✅ Basic Authentication implementation
-   - ✅ Multiple valid credentials
-   - ✅ 401 Unauthorized for invalid access
-   - ✅ Comprehensive security analysis and recommendations
+   -  Basic Authentication implementation
+   -  Multiple valid credentials
+   -  401 Unauthorized for invalid access
+   -  Comprehensive security analysis and recommendations
 
 4. **API Documentation**
-   - ✅ Complete endpoint documentation (`docs/api_docs.md`)
-   - ✅ Request/response examples
-   - ✅ Error codes and troubleshooting
-   - ✅ Setup and testing instructions
+   -  Complete endpoint documentation (`docs/api_docs.md`)
+   -  Request/response examples
+   -  Error codes and troubleshooting
+   -  Setup and testing instructions
 
 5. **Data Structures & Algorithms (DSA)**
-   - ✅ Linear search implementation - O(n)
-   - ✅ Dictionary lookup implementation - O(1)
-   - ✅ Binary search implementation - O(log n)
-   - ✅ Hash table search with collision resolution
-   - ✅ Performance comparison endpoint with real-time analysis
-   - ✅ Efficiency analysis and recommendations
+   -  Linear search implementation - O(n)
+   -  Dictionary lookup implementation - O(1)
+   -  Binary search implementation - O(log n)
+   -  Hash table search with collision resolution
+   -  Performance comparison endpoint with real-time analysis
+   -  Efficiency analysis and recommendations
 
 6. **Testing & Validation**
-   - ✅ Automated test scripts (Python and Windows batch)
-   - ✅ Manual testing examples with curl
-   - ✅ Screenshot testing guide (`TESTING_COMMANDS.md`)
-   - ✅ Comprehensive test coverage for all endpoints
+   -  Automated test scripts (Python and Windows batch)
+   -  Manual testing examples with curl
+   -  Screenshot testing guide (`TESTING_COMMANDS.md`)
+   -  Comprehensive test coverage for all endpoints
 
-## 📊 Technical Specifications
+##  Technical Specifications
 
 ### Database Requirements Met:
-- ✅ **MySQL Data Types**: Appropriate VARCHAR, INT, DECIMAL, DATETIME usage
-- ✅ **Referential Integrity**: FOREIGN KEY constraints implementation
-- ✅ **Data Validation**: CHECK constraints for business rules
-- ✅ **Performance**: Indexes for optimized queries
-- ✅ **Documentation**: Comprehensive table and column comments
+-  **MySQL Data Types**: Appropriate VARCHAR, INT, DECIMAL, DATETIME usage
+-  **Referential Integrity**: FOREIGN KEY constraints implementation
+-  **Data Validation**: CHECK constraints for business rules
+-  **Performance**: Indexes for optimized queries
+-  **Documentation**: Comprehensive table and column comments
 
 ### API Security Enhancements:
-- ✅ **Authentication**: Multi-user Basic Auth with validation
-- ✅ **Data Validation**: Input sanitization and type checking
-- ✅ **Error Handling**: Proper HTTP status codes and messages
-- ✅ **Security Analysis**: Documented limitations and improvements
+-  **Authentication**: Multi-user Basic Auth with validation
+-  **Data Validation**: Input sanitization and type checking
+-  **Error Handling**: Proper HTTP status codes and messages
+-  **Security Analysis**: Documented limitations and improvements
 
 ### DSA Performance Metrics:
 - **Linear Search**: O(n) - Average 0.045ms per search
@@ -335,7 +335,7 @@ The system processes various types of MoMo SMS messages:
 - **Binary Search**: O(log n) - Average 0.009ms per search
 - **Hash Table**: O(1) average - Custom implementation with collision handling
 
-## 🔗 Project Resources
+##  Project Resources
 
 - **Architecture Diagram**: [System Design](https://drive.google.com/file/d/1Xa7DOjepNgDx9xvPfTrK3o_vju3nNNQe/view?usp=sharing)
 - **Progress Board**: [GitHub Project](https://github.com/users/christiantuyishime01/projects/3/views/1)
@@ -350,7 +350,7 @@ This project demonstrates enterprise-level software development practices includ
 - **Testing Methodology**: Comprehensive validation and documentation
 - **Team Collaboration**: GitHub workflow and project management
 
-## 📞 Support & Documentation
+##  Support & Documentation
 
 For technical issues or questions:
 1. **API Documentation**: Complete guide in `docs/api_docs.md`
@@ -358,15 +358,15 @@ For technical issues or questions:
 3. **Database Documentation**: Schema details in `database/database_setup.sql`
 4. **Error Resolution**: Check server console and documentation
 
-## 🚀 Quality Assurance
+##  Quality Assurance
 
 ### Testing Performed:
-- ✅ **Schema Validation**: Database constraints and relationships
-- ✅ **API Endpoint Testing**: All CRUD operations validated
-- ✅ **Authentication Testing**: Valid and invalid credential scenarios
-- ✅ **Performance Testing**: DSA algorithm comparison and analysis
-- ✅ **Integration Testing**: End-to-end workflow validation
+-  **Schema Validation**: Database constraints and relationships
+-  **API Endpoint Testing**: All CRUD operations validated
+-  **Authentication Testing**: Valid and invalid credential scenarios
+-  **Performance Testing**: DSA algorithm comparison and analysis
+-  **Integration Testing**: End-to-end workflow validation
 
 ---
 
-**System Status**: ✅ **Production Ready** - This system successfully processes real MoMo SMS data (1,693 transactions) and provides a secure, efficient API for transaction management with comprehensive database foundation and DSA performance analysis.
+**System Status**:  **Production Ready** - This system successfully processes real MoMo SMS data (1,693 transactions) and provides a secure, efficient API for transaction management with comprehensive database foundation and DSA performance analysis.
